@@ -1,0 +1,16 @@
+<!-- sample html code -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+    <link rel="preload" href="./lifegame_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+</head>
+<body>
+    <!-- run wasm -->
+    <script type="module">
+        import init from "./lifegame.js"
+        init("./lifegame_bg.wasm");
+    </script>
+
+</body>
+</html>
